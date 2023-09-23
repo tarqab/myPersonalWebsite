@@ -1,0 +1,281 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+html {
+    scroll-padding-top: 4.3125rem;
+}
+.home {
+    background-image: url(../img/hero-dev.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.myNavbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: black;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+}
+
+.layerParent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.homelayer {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.big-font {
+    font-size: 5rem;
+}
+
+.typingSkills::after {
+    content: "";
+    animation-name: animSkills;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes animSkills {
+    0% {
+        content: "|";
+    }
+
+    5% {
+        content: "D|";
+    }
+
+    10% {
+        content: "De|";
+    }
+
+    15% {
+        content: "Dev|";
+    }
+
+    30% {
+        content: "Deve|";
+    }
+
+    35% {
+        content: "Devel|";
+    }
+
+    40% {
+        content: "Develo|";
+    }
+
+    45% {
+        content: "Develop|";
+    }
+
+    50% {
+        content: "Developer|";
+    }
+
+    55% {
+        content: "|";
+    }
+
+    60% {
+        content: "F|";
+    }
+
+    65% {
+        content: "Fr|";
+    }
+
+    70% {
+        content: "Fre|";
+    }
+
+    75% {
+        content: "Free|";
+    }
+
+    80% {
+        content: "Freel|";
+    }
+
+    85% {
+        content: "Freelan|";
+    }
+
+    90% {
+        content: "Freelanc|";
+    }
+
+    93% {
+        content: "Freelance|";
+    }
+
+    96% {
+        content: "Freelancer|";
+    }
+
+    100% {
+        content: "|";
+    }
+}
+
+
+/* =============== About Me =============== */
+.about {
+    padding: 5rem 0;
+}
+
+.skill-item p {
+    margin: 0;
+
+}
+
+.about-title {
+
+    position: relative;
+}
+
+.about-title::after {
+    content: "";
+    width: 5.625rem;
+    height: 0.1875rem;
+    background-color: #0078ff;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+/* =============== SERVICES  =============== */
+
+
+.title-disc {
+    position: relative;
+
+}
+
+.title-disc::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 5.625rem;
+    height: 0.3rem;
+    background-color: #0078ff;
+}
+
+.icon-services {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 0.5rem solid #0078ff;
+    transition: 0.5s background-color, border-color;
+}
+
+.icon-services:hover {
+    background-color: #0078ff;
+    border-color: #a2c6ef;
+}
+
+/* =============== Projects  =============== */
+
+.plus-icon {
+    width: 3.125rem;
+    height: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 0.2rem solid #0078ff;
+}
+
+.plus-icon:hover {
+    cursor: pointer;
+}
+
+.card-project img {
+    transition: 1s transform;
+
+}
+.card-project img:hover  {
+cursor: pointer;
+transform: scale(1.1);
+}
+
+
+/* =============== Contact  =============== */
+
+.contact {
+ background-image:url(../img/overlay-bg.jpg);
+ background-attachment: fixed;
+ background-position: center center;
+ background-size:cover;
+ position: relative;
+ height: 100vh;
+ overflow: hidden;
+}
+.contact-container {
+    z-index: 10;
+}
+.layer-contact {
+position: absolute;
+background-color:rgba(0, 120, 255, 0.5);
+top:0;
+left:0;
+width: 100%;
+height: 100%;
+}
+.textarea-contact {
+    min-height: 6rem !important;
+    max-height: 10rem !important
+}
+.contact-icons {
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    border: 0.2rem solid #0078ff;
+}
+.contact-icons:hover {
+    cursor: pointer;
+}
+
+/* =============== Footer  =============== */
+
+.footer {
+    color:white;
+    padding: 2rem 0 ;
+    background-color: rgba(0, 120, 255,0.8);
+    position: sticky;
+    top:100%   
+}
+.arrow-button {
+    position: fixed;
+    background-color: #0078ff;
+    bottom: 1rem;
+    right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: transparent;
+    color: white;
+}
