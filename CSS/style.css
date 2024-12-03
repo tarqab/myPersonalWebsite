@@ -214,6 +214,7 @@ html {
 
 .card-project img {
     transition: 1s transform;
+  
 
 }
 .card-project img:hover  {
